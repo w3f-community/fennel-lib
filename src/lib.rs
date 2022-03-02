@@ -5,6 +5,7 @@ pub mod database;
 pub mod dh_tools;
 pub mod fennel;
 pub mod rsa_tools;
+pub mod whiteflag;
 
 use codec::{Decode, Encode};
 
@@ -12,6 +13,7 @@ pub use crate::aes_tools::*;
 pub use crate::database::*;
 pub use crate::dh_tools::*;
 pub use crate::rsa_tools::*;
+pub use crate::whiteflag::*;
 
 #[derive(Copy, Clone, Encode, Decode, Debug)]
 pub struct FennelServerPacket {
